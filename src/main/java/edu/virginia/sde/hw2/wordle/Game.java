@@ -114,8 +114,8 @@ public class Game {
      * game's guesses remaining, and handling win and loss conditions.
      *
      * @param guess A player guessed word
-     * @throws IllegalStateException    if the game is already over (see {@link Game#isGameOver()}
-     * @throws IllegalArgumentException if the word is not in the games Guess Dictionary - That is,
+     * @throws GameAlreadyOverException if the game is already over (see {@link Game#isGameOver()}
+     * @throws IllegalWordException if the word is not in the games Guess Dictionary - That is,
      *                                  it's not a real 5-letter word.
      */
     public GuessResult submitGuess(String guess) {
